@@ -9,7 +9,7 @@ import axios from "axios";
  */
 export namespace AuthenticationValidator {
 
-    export const middleware = async (
+    export const middleware = (): express.RequestHandler => async (
         req: express.Request,
         res: express.Response,
         next: express.NextFunction
